@@ -35,11 +35,12 @@ colorDivs.forEach((div) => {
   div.addEventListener('click', highlight);
 });
 
-const order = function () {
+const order = function (e) {
   container.insertAdjacentHTML(
     'afterend',
     `<div class="ordered">Děkujeme za Vaši objednávku!</div>`,
   );
+  e.target.removeEventListener('click', order);
 };
 
 btn.addEventListener('click', order);
