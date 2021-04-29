@@ -32,11 +32,25 @@ header {
   background-repeat: no-repeat, repeat-x;
   height: 360px;
 }
+.colors,
+.product {
+  display: flex;
+}
+.product__colors {
+  margin-left: 30px;
+}
+
+.color {
+  display: flex;
+  flex: 1 0 400px;
+  gap: 15px;
+}
 
 .color-box {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  flex-direction: column;
 }
 
 .red {
@@ -53,6 +67,14 @@ header {
 
 .blueSky {
   background: skyblue;
+}
+
+.selected {
+  box-shadow: 0px 0px 17px 7px rgba(255, 255, 255, 0.56);
+}
+
+.box {
+  align-content: center;
 }
 
 h1.site-title {
@@ -80,4 +102,12 @@ h1.site-title span {
 .t-shirt {
   stroke: #000;
   stroke-width: 2;
+}
+
+.button {
+  padding: 10px 30px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: #141518;
 }
