@@ -35,6 +35,7 @@ header {
 .colors,
 .product {
   display: flex;
+  justify-content: center;
 }
 .product__colors {
   margin-left: 50px;
