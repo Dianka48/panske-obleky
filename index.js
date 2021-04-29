@@ -29,6 +29,9 @@ const highlight = function (e) {
   div.classList.add('selected');
   div.style.filter = 'none';
   shirt.style = `fill: ${div.dataset.color}`;
+  if (div.classList.contains('black')) {
+    shirt.classList.add('stroke');
+  } else shirt.classList.remove('stroke');
 };
 
 colorDivs.forEach((div) => {
