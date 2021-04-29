@@ -41,3 +41,5 @@ const order = function () {
     `<div class="ordered">Děkujeme za Vaši objednávku!</div>`,
   );
 };
+
+btn.addEventListener('click', order);
